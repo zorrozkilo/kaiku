@@ -1,0 +1,718 @@
+@font-face {
+    font-family: "Blogger_Sans-Medium";
+    src: url("../fonts/Blogger_Sans-Medium.otf");
+}
+
+@font-face {
+    font-family: "Blogger_Sans-Bold";
+    src: url("../fonts/Blogger_Sans-Bold.otf");
+}
+
+@font-face {
+    font-family: "Blogger_Sans-Light";
+    src: url("../fonts/Blogger_Sans-Light.otf");
+}
+
+@font-face {
+    font-family: "AvantGarde";
+    src: url("../fonts/AvantGarde-CondBold.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+button,
+li {
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    margin: 10px 0;
+}
+
+h1,
+h2 {
+    font-family: "AvantGarde";
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+span {
+    font-weight: 700;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    width: 100%;
+    background: transparent;
+    height: 70px;
+    height: auto;
+    color: white;
+    z-index: 99;
+}
+
+header.header-scroll {
+    background-color: white;
+    height: 70px;
+    -webkit-box-shadow: 0px 4px 7px 3px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 4px 7px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 7px 3px rgba(0, 0, 0, 0.05);
+}
+
+header.header-scroll a,
+header.header-scroll li {
+    color: #122b61;
+}
+
+header.header-scroll #logo-kaiku img {
+    width: 90px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header li,
+header a {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.boton-menu {
+    display: none;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.light {
+    font-weight: 300;
+}
+
+header li {
+    padding-left: 30px;
+}
+
+#logo-kaiku img {
+    margin-top: 60px;
+    width: 120px;
+    margin-top: 0px;
+}
+
+#hero {
+    background-image: url("../img/kaiku-hero.jpg");
+    background: linear-gradient(to right, #00000073, #00000073), url(../img/kaiku-hero.jpg) no-repeat top center;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+}
+
+#hero-seccion-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 45%;
+    padding: 50px;
+    margin-top: 100px;
+}
+
+#hero p {
+    margin: 0 0 50px 0;
+    line-height: 1.5;
+}
+
+#hero-botones {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#hero a {
+    background-color: #2386b8;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px 10px 0;
+    font-size: 18px;
+}
+
+#hero a:nth-child(2) {
+    background-color: #122b61;
+}
+
+#baserris-km0 {
+    background-image: linear-gradient(180deg, #122b61, #2386b8);
+    height: auto;
+    padding: 100px;
+}
+
+#baserris-km0-titular {
+    text-align: center;
+    max-width: 80vw;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#baserris-km0-titular p {
+    max-width: 60%;
+    margin: auto;
+}
+
+#baserris-km0-formulario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+}
+
+#input {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    width: 400px;
+    border: 0;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+#boton {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 9px 20px 9px;
+    border-radius: 5px;
+    background-color: #2386b8;
+    font-size: 18px;
+    color: #fff;
+    border: 0px;
+    cursor: pointer;
+}
+
+#baserris-km0-mapas {
+    display: flex;
+}
+
+#mapa {
+    width: 80%;
+    margin: 50px auto;
+}
+
+#botones-mapas {
+    text-align: center;
+}
+
+#contenedor-botones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#contenedor-botones1 {
+    display: flex;
+    width: 30%;
+}
+
+#botones-mapas .boton {
+    border-radius: 5px;
+    background-color: #122b61;
+    font-size: 18px;
+    box-shadow: 7px 7px 4px 0 rgb(0 0 0 / 9%);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#leche-sostenible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 100px 80px;
+    background: #f7f7f7;
+}
+
+#leche-sostenible-titular {
+    text-align: center;
+    margin: auto;
+    /* margin-bottom: 100px;*/
+}
+
+#leche-sostenible h2,
+#leche-sostenible p {
+    color: #122b61;
+}
+
+#iconos {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 100%;
+}
+
+#iconos div {
+    max-width: 20%;
+}
+
+#iconos img {
+    max-height: 80px;
+}
+
+#iconos h3,
+#iconos p {
+    color: #122b61;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+#iconos p {
+    color: lightslategray;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+#juega-y-gana {
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#juega-y-gana-titular {
+    text-align: center;
+    max-width: 80vw;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#juega-y-gana h2,
+#juega-y-gana p {
+    color: #122b61;
+}
+
+#quizz {
+    height: 90vh;
+    background-color: rgb(212, 212, 212);
+}
+
+#ep_frame_915523 {
+    max-width: 1200px;
+}
+
+#ep_frame_contents_915523 {
+    height: 780px;
+}
+
+#cesped {
+    background-image: url("../img/cesped.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    margin-bottom: -10px;
+}
+
+#cesped img {
+    width: 100%;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px 80px;
+    background: #628a36;
+    color: white;
+}
+
+#footer a {
+    color: white;
+    padding: 0 0 0 20px;
+}
+
+#copyright p {
+    font-size: 18px;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+/* Alerta */
+
+.swal-modal {
+    font-family: "Blogger_Sans-Medium", sans-serif;
+    padding-bottom: 20px;
+}
+
+.swal-footer {
+    text-align: center;
+}
+
+.swal-button {
+    border: none;
+    background-color: #122b61;
+}
+
+
+/*-----------------*/
+
+
+/* COMARCA */
+
+#comarca {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+#texto-comarca {
+    width: 30%;
+}
+
+#texto-comarca p {
+    font-size: 20px;
+}
+
+#imagenes-comarca {
+    width: 60%;
+}
+
+video {
+    background-color: black;
+    border: none;
+}
+
+.splide__list {
+    align-items: center;
+}
+
+.splide__slide img,
+.splide__slide video {
+    background-color: black;
+    width: auto;
+    height: 350px;
+    margin-right: 20px;
+}
+
+.splide__pagination {
+    bottom: -2em !important;
+}
+
+.splide__arrow {
+    background-color: white !important;
+    opacity: 1 !important;
+}
+
+
+/*----EXTRAS-----*/
+
+.extras {
+    max-width: 1200px;
+    margin: auto;
+    padding: 100px 50px;
+}
+
+.extras h1,
+.extras h2,
+.extras p {
+    color: #122b61;
+    line-height: 1.4;
+}
+
+.extras h2 {
+    font-size: 30px;
+    margin: 80px 0px 20px;
+}
+
+.extras p {
+    font-weight: 400;
+}
+
+
+/*----LOADER-----*/
+
+.loader {
+    position: fixed;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    opacity: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    animation-name: transicionLoader;
+    animation-duration: 1.3s;
+}
+
+.loader img {
+    width: 150px;
+    opacity: 0;
+    animation-name: transicionLoaderImagen;
+    animation-duration: 1.3s;
+}
+
+.delayLoader {
+    animation-delay: 1.3s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes transicionLoaderImagen {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes transicionLoader {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* --------------------------------------- */
+
+
+/* --------------------------------------- */
+
+
+/* --------------------------------------- */
+
+@media (max-width: 1024px) {
+    h1,
+    h2 {
+        font-size: 35px;
+    }
+    header {
+        padding: 20px;
+    }
+    header nav {
+        display: none;
+    }
+    .boton-cerrar {
+        position: absolute;
+        width: 20px;
+        top: 50px;
+        right: 50px;
+        z-index: 99;
+        cursor: pointer;
+    }
+    .boton-menu {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        width: 30px;
+    }
+    .boton-cerrar-menu {
+        width: 30px;
+    }
+    #menu-movil {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        background-image: linear-gradient(180deg, #122b61, #2386b8);
+        z-index: 99;
+    }
+    #menu-movil li,
+    #menu-movil a {
+        margin: 40px 0;
+        font-size: 30px;
+    }
+    #menu-movil .logo {
+        width: 120px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    #hero {
+        background: linear-gradient(to right, #00000073, #00000073), url(../img/kaiku-hero-movil.jpg) no-repeat top center;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        height: auto;
+    }
+    #hero-seccion-texto {
+        width: 100%;
+    }
+    #hero p {
+        margin: 0 0 30px 0;
+        line-height: 1.2;
+    }
+    #hero-seccion-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 50px 40px;
+        margin-top: 60px;
+    }
+    #baserris-km0 {
+        padding: 100px 0;
+    }
+    #baserris-km0-titular p {
+        max-width: 100%;
+    }
+    #baserris-km0-formulario {
+        flex-direction: column;
+    }
+    #input {
+        width: 70%;
+        text-align: center;
+    }
+    #boton {
+        margin-left: 0px;
+    }
+    #mapa {
+        width: 100%;
+    }
+    #comarca {
+        flex-direction: column;
+    }
+    #texto-comarca,
+    #imagenes-comarca {
+        width: 100%;
+        padding: 10px 40px;
+    }
+    .splide__slide img,
+    .splide__slide video {
+        background-color: black;
+        width: auto;
+        height: 200px;
+        margin-right: 20px;
+    }
+    .leche-sostenible-contenedor {
+        flex-direction: column;
+    }
+    #leche-sostenible {
+        padding: 100px 40px;
+    }
+    #iconos {
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    #iconos div {
+        max-width: 100%;
+        margin-top: 80px;
+        text-align: center;
+    }
+    #iconos h3,
+    #iconos p {
+        margin: 10px 0;
+    }
+    #juega-y-gana {
+        padding: 100px 20px;
+    }
+    #footer {
+        padding: 20px 40px;
+    }
+    #footer a {
+        padding: 0;
+    }
+    .politicaPrivacidad {
+        display: flex;
+        flex-direction: column;
+    }
+    .extras {
+        padding: 50px 20px;
+    }
+}
+
+#insercion-js {
+    height: 100vh;
+    width: 100%;
+}
+
+
+/*----imprescindible abajo del todo-----*/
+
+.none {
+    display: none;
+}
+
+.display {
+    display: block;
+}
