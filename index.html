@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script data-cookieconsent="ignore">
+        (function(w, d, l) {
+            w[l] = w[l] || [];
+
+            function gtag() {
+                w[l].push(arguments)
+            };
+            gtag("consent", "default", {
+                ad_storage: d,
+                analytics_storage: d,
+                wait_for_update: 500,
+            });
+            gtag("set", "ads_data_redaction", true);
+        })(window, "denied", "dataLayer");
+    </script>
+    <script>
+        window["gtag_enable_tcf_support"] = true;
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })
+        (window, document, 'script', 'dataLayer', '');
+    </script>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-framework="IAB" data-layer-name="dataLayer" data-cbid="49edadb2-8054-4a7a-97d6-93d68b63648b" data-culture="ES" type="text/javascript" data-blockingmode="auto"></script>
+    <script>
+        function doSaveRecipe() {
+            var BO_HOST = 'https://www.bigoven.com';
+            var x = document.createElement('script');
+            var parentUrl = document.URL;
+            x.type = 'text/javascript';
+            x.src = BO_HOST + '/assets/noexpire/js/getrecipe.js?' + (new Date().getTime() / 100000);
+            document.getElementsByTagName('head')[0].appendChild(x);
+        }
+    </script>
+    <meta name='robots' content='max-image-preview:large' />
+
+    <title>kaikukm0 | Gure baserriak</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
+    <script src="js/wow.min.js" type="text/javascript"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67192874-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-67192874-1');
+    </script>
+</head>
+
+<body>
+    <div class="loader">
+        <img src="img/logo-kaiku-negro.png" alt="" />
+    </div>
+
+    <!-- HEADER -->
+
+    <header class="header animate__animated animate__fadeInDown delayLoader">
+        <div id="logo-kaiku">
+            <img class="logo" src="img/logo-kaiku-blanco.png" alt="" />
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a class="baserris-km0" key="baserris-km0" href="#baserris-km0">BASERRIS KM0</a
+            >
+          </li>
+          <li>
+            <a class="juega-y-gana" key="juega-y-gana" href="#juega-y-gana"
+              >JUEGA Y GANA</a
+            >
+          </li>
+          <!--<li>
+            <a id="es" class="translate bold" onclick="botonEs()">ES</a> |
+                    <a id="eu" class="translate light" onclick="botonEus()">EUS</a>
+                </li>-->
+            </ul>
+        </nav>
+        <img id="boton-hamburguesa" class="boton-menu" src="img/menu.svg" alt="" onclick="abrirMenumovil()">
+    </header>
+
+    <!--MENÚ MOVIL-->
+
+    <section id="menu-movil" class="">
+        <img class="logo" src="img/logo-kaiku-blanco.png" alt="" />
+        <img class="boton-menu boton-cerrar-menu animate__animated animate__fadeIn" src="img/close.svg" alt="" onclick="cerrarMenumovil()">
+        <div class="animate__animated animate__fadeIn ">
+            <nav>
+                <ul>
+                    <li>
+                        <a class="baserris-km0" key="baserris-km0" href="#baserris-km0" onclick="cerrarMenumovil()">BASERRIS KM0</a
+                        >
+                      </li>
+                      <li>
+                        <a class="juega-y-gana" key="juega-y-gana" href="#juega-y-gana" onclick="cerrarMenumovil()"
+                          >JUEGA Y GANA</a
+                        >
+                      </li>
+                      <!--<li>
+                        <a id="es" class="translate bold" onclick="botonEs()" onclick="cerrarMenumovil()">ES</a> |
+                        <a id="eu" class="translate light" onclick="botonEus()" onclick="cerrarMenumovil()">EUS</a>
+                    </li>-->
+
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- HERO -->
+
+    <section id="hero">
+        <div id="hero-seccion-texto" class="animate__animated animate__fadeIn delayLoader">
+            <h1 class="la-leche" key="la-leche">LA LECHE DE NUESTROS BASERRIS</h2>
+                <p class="recogemos" key="recogemos">Recogemos la leche cada día en nuestros baserris y recorre tan pocos KM hasta la planta de envasado que llega con todas sus propiedades y todo su sabor. <span class="descubre" key="descubre">Descubre lo cerca que estamos de ti y gana un año de leche gratis con nuestro juego.</span></p>
+                <div id="hero-botones">
+                    <a class="cta-1" key="cta-1" href="#baserris-km0">Ver baserri más cercano</a>
+                    <a class="cta-2" key="cta-2" href="#juega-y-gana">Juega y gana</a>
+                </div>
+        </div>
+        <div id="hero-seccion-vacia"></div>
+    </section>
+
+    <!-- BASERRIS KM0 -->
+
+    <section id="baserris-km0">
+        <div id="baserris-km0-titular">
+            <h2 class="nuestros" key="nuestros">NUESTROS BASERRIS ESTÁN MUY CERCA DE TI</h2>
+            <p class="de-proximidad" key="de-proximidad">¡Descubre los baserris que hay en tu comarca y verás lo cerca que están de ti!</p>
+        </div>
+        <div id="baserris-km0-formulario">
+            <input id="input" type="number" class="introduce" key="placeholder-formulario" placeholder="Introduce tu código postal" />
+            <a href="#mapa" id="boton" class="boton-formulario" key="boton-formulario" onclick="cambiarImagenJS()">Descubrir</a>
+        </div>
+        <div id="baserris-km0-mapas">
+            <img id="mapa" src="img/simulacion.png" alt="">
+        </div>
+        <div id="contenedor-botones">
+            <div id="botones-mapas">
+
+                <a href="#mapa" id="boton-bizkaia" class=" boton lang" key="boton-bizkaia" onclick="mostrarMapaBizkai()">Ver mapa de Bizkaia</a>
+                <a href="#mapa" id="boton-gipuzkoa" class="boton lang" key="boton-gipuzkoa" onclick="mostrarMapaGipuzkoa()" href="#mapa">Ver mapa de Gipuzkoa</a>
+                <a id="boton-araba" class="boton lang" key="boton-araba" onclick="mostrarMapaAraba()">Ver mapa Araba</a>
+                <a id="boton-nafarroa" class="boton lang" key="boton-nafarroa" onclick="mostrarMapaNafarroa()">Ver mapa de Nafarroa</a>
+
+                <button id="boton-volver" class="boton lang" key="boton-atras" onclick="cambiarImagenJS()">Volver atrás</button>
+
+                <button id="boton-debabarrena" class="boton lang" key="boton-saber-mas" onclick="mostrarContenidoDebabarrena()">Saber más de esta comarca</button>
+                <button id="boton-goierri" class="boton lang" key="boton-saber-mas" onclick="mostrarContenidoGoierri()">Saber más de esta comarca</button>
+                <button id="boton-tolosaldea" class="boton lang" key="boton-saber-mas" onclick="mostrarContenidoTolosaldea()">Saber más de esta comarca</button>
+                <button id="boton-urolakosta" class="boton lang" key="boton-saber-mas" onclick="mostrarContenidoUrolakosta()">Saber más de esta comarca</button>
+
+            </div>
+        </div>
+        <div id="comarca"></div>
+    </section>
+
+    <!-- LECHE SOSTENIBLE -->
+
+    <section id="leche-sostenible">
+        <div id="leche-sostenible-titular">
+            <h2 class="lecheSostenible" key="lecheSostenible">LECHE DE PRODUCCIÓN SOSTENIBLE</h2>
+            <p class="compromiso" key="compromiso">Este es nuestro compromiso</p>
+        </div>
+        <div id="iconos">
+            <div class=" wow animate__animated animate__fadeInUp">
+                <img src="img/icono-vaca.png" alt=" ">
+                <h3 class="bienestar" key="bienestar">1. Bienestar animal</h2>
+                    <p class="cuidamos" key="cuidamos">Cuidamos a nuestras vacas con mimo y nos preocupamos por su bienestar.</p>
+            </div>
+            <div class=" wow animate__animated animate__fadeInUp">
+                <img src="img/icono-lechera.png" alt=" ">
+                <h3 class="cercania" key="cercania">2. Cercanía</h2>
+                    <p class="diario" key="diario">Recogemos la leche a diario y en menos de 8h está en la planta de envasado.</p>
+            </div>
+            <div class=" wow animate__animated animate__fadeInUp">
+                <img src="img/icono-caserio.png" alt=" ">
+                <h3 class="entorno" key="entorno">3. Cuidamos nuestro entorno</h2>
+                    <p class="gracias" key="gracias">Gracias al trabajo que realizamos conseguimos mantener los paisajes tal y como los conocemos.</p>
+            </div>
+            <div class=" wow animate__animated animate__fadeInUp">
+                <img src="img/icono-tractor.png" alt=" ">
+                <h3 class="trato" key="trato">4. Trato igualitario</h2>
+                    <p class="ademas" key="ademas">Además, en la cooperativa Kaiku todos los ganaderos contamos por igual, grandes y pequeños.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JUEGA Y GANA -->
+
+    <section id="juega-y-gana">
+        <div id="juega-y-gana-titular">
+            <h2 class="juega" key="juega">GANA UN AÑO DE LECHE GRATIS</h2>
+            <p class="participa" key="participa">Participa en nuestro juego y gana un año de leche gratis.</p>
+        </div>
+
+        <!-- JUEGO -->
+        <!-- Introduce este DIV en tu código donde quieras mostrar el Widget: -->
+        <div class="_widget" id="ep_frame_915523" style="width:100%; -webkit-overflow-scrolling:touch; overflow:auto;"></div>
+
+    </section>
+    <!-- Introduce este DIV en tu código donde quieras mostrar el Widget: -->
+
+
+    <!-- FOOTER -->
+
+    <div id="cesped"></div>
+    <footer>
+        <div id="footer">
+            <div id="copyright">
+                <p class="copyright" key="copyright">&copy2021. Kaiku Corporación Alimentaria. Todos los derechos reservados
+                </p>
+            </div>
+            <div class="politicaPrivacidad ">
+                <a class="legal" key="legal" href="https://kaikukm0.eus/aviso-legal" target="_blank">Aviso
+                    legal</a>
+                <a class="privacidad" key="privacidad" href="https://kaikukm0.eus/gurebaserriak/bases-legales.html" target="_blank">Bases legales</a>
+                <a class="privacidad" key="privacidad" href="https://kaikukm0.eus/gurebaserriak/politica-privacidad.html" target="_blank">Política
+                    de privacidad</a>
+                <a class="cookies" key="cookies" href="https://kaikukm0.eus/cookies" target="_blank">Política
+                    de cookies</a>
+            </div>
+        </div>
+    </footer>
+
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-translate@1.3.0/jquery.translate.min.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script src="js/traduccion.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- Añade este código al final de la página justo antes de la etiqueta <body>: -->
+    <script type="text/javascript" src="https://v7b3r3q5.stackpathcdn.com/widget/widget_embed_adaptable.js?v=1.98" data-cfasync="false"></script>
+    <script type="text/javascript" src="https://v7b3r3q5.stackpathcdn.com/js/jquery.ba-postmessage.js?v=1.98" data-cfasync="false"></script>
+    <script type="text/javascript">
+        if (typeof(EasyEmbedAdaptable) !== "undefined") {
+            EasyEmbedAdaptable.init({
+                container_id: "ep_frame_915523",
+                domain: "https://a.cstmapp.com/",
+                gets: "micro=1&utm_source=widget&utm_medium=embed",
+                max_height: "100%",
+                promo_id: 915523
+            });
+        }
+    </script>
+</body>
+
+</html>
